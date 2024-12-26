@@ -111,15 +111,27 @@ async function updateUser(id, name) {
 }
 
 async function deleteUser(id) {
-    const params = new URLSearchParams();
-    params.append('id', id);
-    const response = await fetch(apiUrl, {
-        method: 'DELETE',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: params.toString(),
-    });
+    const specificUrl = "https://rest-api-go-640830702257.asia-southeast1.run.app/users";
+    const isSpecificUrl = apiUrl === specificUrl;
+
+    let response;
+
+    if (isSpecificUrl) {
+        const urlWithQuery = `${apiUrl}?id=${encodeURIComponent(id)}`;
+        response = await fetch(urlWithQuery, {
+            method: 'DELETE',
+        });
+    } else {
+        const params = new URLSearchParams();
+        params.append('id', id);
+        response = await fetch(apiUrl, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: params.toString(),
+        });
+    }
     fetchUsers();
 }
 
