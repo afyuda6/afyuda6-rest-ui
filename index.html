@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Operations</title>
+    <title>REST UI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>CRUD Operations</h1>
+
+    <div>
+        <label for="api-selector">Choose API Host:</label>
+        <select id="api-selector">
+            <option value="https://rest-api-cpp-6ujvrm2fma-as.a.run.app/users">REST API C++</option>
+            <option value="https://rest-api-go-6ujvrm2fma-as.a.run.app/users">REST API Go</option>
+            <option value="https://rest-api-java-6ujvrm2fma-as.a.run.app/users">REST API Java</option>
+            <option value="https://rest-api-py-6ujvrm2fma-as.a.run.app/users">REST API Python</option>
+            <option value="https://rest-api-php-6ujvrm2fma-as.a.run.app/users">REST API PHP</option>
+            <option value="https://rest-api-cs-6ujvrm2fma-as.a.run.app/users">REST API C#</option>
+            <option value="https://rest-api-rb-6ujvrm2fma-as.a.run.app/users">REST API Ruby</option>
+            <option value="https://rest-api-rs-6ujvrm2fma-as.a.run.app/users">REST API Rust</option>
+            <option value="https://rest-api-js-6ujvrm2fma-as.a.run.app/users">REST API JavaScript</option>
+            <option value="https://rest-api-kt-6ujvrm2fma-as.a.run.app/users">REST API Kotlin</option>
+            <option value="https://rest-api-scala-6ujvrm2fma-as.a.run.app/users">REST API Scala</option>
+            <option value="https://rest-api-r-6ujvrm2fma-as.a.run.app/users">REST API R</option>
+            <option value="https://rest-api-fs-6ujvrm2fma-as.a.run.app/users">REST API F#</option>
+            <option value="https://rest-api-vb-6ujvrm2fma-as.a.run.app/users">REST API Visual Basic .NET</option>
+            <option value="https://rest-api-ts-6ujvrm2fma-as.a.run.app/users">REST API TypeScript</option>
+        </select>
+    </div>
 
     <form id="create-form">
         <input type="text" id="name" placeholder="Enter Name" required>
