@@ -1,4 +1,4 @@
-let apiUrl = 'https://rest-api-cpp-6ujvrm2fma-as.a.run.app/users';
+let apiUrl = '';
 const usersTable = document.getElementById('users-list');
 const createForm = document.getElementById('create-form');
 const nameInput = document.getElementById('name');
@@ -10,6 +10,18 @@ apiSelector.addEventListener('change', (event) => {
 });
 
 async function fetchUsers() {
+    if (!apiUrl) {
+        usersTable.innerHTML = `
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+            <tr><td colspan="3">No API URL selected. Please choose an API from the dropdown.</td></tr>
+        `;
+        return;
+    }
+
     try {
         const response = await fetch(apiUrl, {
             method: 'GET',
