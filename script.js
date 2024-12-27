@@ -200,10 +200,18 @@ function restoreActions(user, actionsCell) {
 
 createForm.onsubmit = async (event) => {
     event.preventDefault();
+    
+    if (!apiUrl || apiUrl.trim() === '') {
+        alert('Please select an API before adding a user.');
+        return;
+    }
+
     const name = nameInput.value.trim();
     if (name) {
         await createUser(name);
         nameInput.value = '';
+    } else {
+        alert('Please enter a name for the user.');
     }
 };
 
