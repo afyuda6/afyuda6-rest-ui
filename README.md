@@ -1,4 +1,4 @@
-# afyuda6-rest-ui
+# rest-ui
 for learning purposes
 
 ## URL
