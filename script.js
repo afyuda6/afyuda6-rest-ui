@@ -3,9 +3,20 @@ const usersTable = document.getElementById('users-list');
 const createForm = document.getElementById('create-form');
 const nameInput = document.getElementById('name');
 const apiSelector = document.getElementById('api-selector');
+const colorMapping = {
+    "https://afyuda6-rest.netlify.app/api/cpp/users": "#aaa",
+    "https://afyuda6-rest.netlify.app/api/rb/users": "#faa",
+    "https://afyuda6-rest.netlify.app/api/cs/users": "#afa",
+    "https://afyuda6-rest.netlify.app/api/php/users": "#aaf",
+    "https://afyuda6-rest.netlify.app/api/go/users": "#aff",
+    "https://afyuda6-rest.netlify.app/api/java/users": "#faf",
+    "https://afyuda6-rest.netlify.app/api/py/users": "#ffa",
+    "https://afyuda6-rest.netlify.app/api/rs/users": "#999"
+};
 
 apiSelector.addEventListener('change', (event) => {
     apiUrl = event.target.value;
+    document.body.style.backgroundColor = colorMapping[apiUrl] || "#fff";
     fetchUsers();
 });
 
