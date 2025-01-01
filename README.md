@@ -1,4 +1,4 @@
-# rest-ui-html
+# rest-ui-js
 for learning purposes
 
 ## URL
