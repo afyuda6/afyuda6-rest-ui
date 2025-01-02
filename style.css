@@ -63,7 +63,7 @@ table {
     margin-top: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    table-layout: fixed;
+    table-layout: auto;
 }
 
 th, td {
@@ -84,6 +84,7 @@ td {
     font-size: 14px;
     color: #555;
     max-width: 100%;
+    white-space: nowrap;
 }
 
 tr:hover {
