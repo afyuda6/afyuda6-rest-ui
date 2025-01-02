@@ -83,6 +83,7 @@ th {
 td {
     font-size: 14px;
     color: #555;
+    max-width: 100%;
 }
 
 tr:hover {
@@ -105,7 +106,7 @@ td:nth-child(3) {
 }
 
 td .name-cell input {
-    width: 60%;
+    width: 100%;
     padding: 5px;
     font-size: 14px;
     box-sizing: border-box;
