@@ -84,7 +84,6 @@ td {
     font-size: 14px;
     color: #555;
     max-width: 100%;
-    white-space: nowrap;
 }
 
 tr:hover {
