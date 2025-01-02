@@ -105,7 +105,7 @@ td:nth-child(3) {
 }
 
 td .name-cell input {
-    width: 100%;
+    width: 60%;
     padding: 5px;
     font-size: 14px;
     box-sizing: border-box;
@@ -136,26 +136,4 @@ select {
     border-radius: 5px;
     font-size: 16px;
     width: 300px;
-}
-
-input {
-    padding: 10px;
-    margin-right: 10px;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #999;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #CCC;
 }
