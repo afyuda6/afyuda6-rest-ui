@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #999;
 }
 
 h1 {
@@ -43,7 +43,7 @@ input {
 
 button {
     padding: 10px 20px;
-    background-color: #999;
+    background-color: #aaa;
     color: white;
     border: none;
     border-radius: 5px;
@@ -54,7 +54,7 @@ button {
 }
 
 button:hover {
-    background-color: #CCC;
+    background-color: #ccc;
 }
 
 table {
