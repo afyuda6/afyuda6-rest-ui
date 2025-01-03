@@ -43,7 +43,7 @@ input {
 
 button {
     padding: 10px 20px;
-    background-color: #aaa;
+    background-color: #555;
     color: white;
     border: none;
     border-radius: 5px;
@@ -54,7 +54,7 @@ button {
 }
 
 button:hover {
-    background-color: #ccc;
+    background-color: #777;
 }
 
 table {
